@@ -81,6 +81,7 @@ echo The desc is %{summary}
 
 %build
 # >> build pre
+cd linux
 perl -p -i -e "s/^EXTRAVERSION.*/EXTRAVERSION = -%{extraver}/" Makefile
 %if 0%{?builds_uImage}
 # << build pre
@@ -100,6 +101,7 @@ make %{?_smp_mflags} modules
 %install
 rm -rf %{buildroot}
 # >> install pre
+cd linux
 # << install pre
 
 # >> install post
