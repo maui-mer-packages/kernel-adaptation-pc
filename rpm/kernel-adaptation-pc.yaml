@@ -5,13 +5,16 @@ Release: 8
 Group: Kernel/Linux Kernel
 License: GPLv2
 Sources:
-    - linux-%{version}.tar.bz2
-    - "%{name}.config"
+    - kernel-adaptation-pc-%{version}.tar.xz
+    - "%{name}-x86.config"
+    - "%{name}-x86_64.config"
 Description: Kernel for %{kernel_target_hw}.
 
 RequiresPre:
     - kmod
     - mkinitrd >= 6.0.39-1
+PkgBR:
+    - bc
 PkgConfigBR:
     - ncurses
 Provides:
