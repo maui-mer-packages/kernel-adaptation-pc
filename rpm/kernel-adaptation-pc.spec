@@ -7,7 +7,7 @@ Name:       kernel-adaptation-pc
 
 # >> macros
 %define extraver maui1
-%define kernel_version 3.13.1
+%define kernel_version 3.13.2
 %define kernel_version_build %{kernel_version}-%{extraver}
 %define kernel_devel_dir %{_prefix}/src/kernels/%{kernel_version_build}
 # << macros
