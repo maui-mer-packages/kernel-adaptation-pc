@@ -1,6 +1,6 @@
 Name: kernel-adaptation-pc
 Summary: Kernel Adaptation %{kernel_target_hw}
-Version: 3.13.2
+Version: 3.13.6
 Release: 1
 Group: Kernel/Linux Kernel
 License: GPLv2
