@@ -214,7 +214,7 @@ dracut -f -N -a 'drm systemd-bootchart systemd' --kver %{kernel_version_build} |
 %if 0%{?builds_vmlinuz}
 /boot/vmlinuz-%{kernel_version_build}
 #/boot/vmlinuz-%{kernel_version}
-#/boot/vmlinuz
+/boot/vmlinuz
 %endif
 %if 0%{?builds_uImage}
 /boot/uImage
