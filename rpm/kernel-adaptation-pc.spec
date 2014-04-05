@@ -7,13 +7,13 @@ Name:       kernel-adaptation-pc
 
 # >> macros
 %define extraver maui1
-%define kernel_version 3.13.6
+%define kernel_version 3.13.9
 %define kernel_version_build %{kernel_version}-%{extraver}
 %define kernel_devel_dir %{_prefix}/src/kernels/%{kernel_version_build}
 # << macros
 
 Summary:    Kernel Adaptation %{kernel_target_hw}
-Version:    3.13.6
+Version:    3.13.9
 Release:    1
 Group:      Kernel/Linux Kernel
 License:    GPLv2
