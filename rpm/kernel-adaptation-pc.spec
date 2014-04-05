@@ -17,6 +17,7 @@ Version:    3.13.9
 Release:    1
 Group:      Kernel/Linux Kernel
 License:    GPLv2
+URL:        http://www.kernel.org
 Source0:    kernel-adaptation-pc-%{version}.tar.xz
 Source1:    %{name}-x86.config
 Source2:    %{name}-x86_64.config
