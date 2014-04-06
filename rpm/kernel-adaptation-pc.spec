@@ -73,7 +73,7 @@ end
 }
 
 # Verify the config meets the current Mer requirements
-#/usr/bin/mer_verify_config .config
+/usr/bin/mer_verify_config .config
 
 # Copy configuration
 if [ "%{_arch}" = "x86_64" ]; then
