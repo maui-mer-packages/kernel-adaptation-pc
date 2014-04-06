@@ -26,6 +26,7 @@ Requires(pre): kmod
 Requires(pre): dracut >= 027
 BuildRequires:  pkgconfig(ncurses)
 BuildRequires:  bc
+BuildRequires:  mer-kernel-checks
 Provides:   kernel = %{kernel_version}
 
 %description

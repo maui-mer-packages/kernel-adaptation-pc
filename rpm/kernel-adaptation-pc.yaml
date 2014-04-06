@@ -16,6 +16,7 @@ RequiresPre:
     - dracut >= 027
 PkgBR:
     - bc
+    - mer-kernel-checks
 PkgConfigBR:
     - ncurses
 Provides:
