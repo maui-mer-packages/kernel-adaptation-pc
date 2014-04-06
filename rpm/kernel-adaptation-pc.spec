@@ -195,6 +195,9 @@ touch -r %{buildroot}/%{kernel_devel_dir}/.config %{buildroot}/%{kernel_devel_di
 # Copy .config to include/config/auto.conf so "make prepare" is unnecessary.
 cp %{buildroot}/%{kernel_devel_dir}/.config %{buildroot}/%{kernel_devel_dir}/include/config/auto.conf
 
+# Remove vmlinuz
+rm -f %{buildroot}/boot/vmlinuz
+
 # << install post
 
 %post
@@ -215,7 +218,7 @@ dracut -f -N -a 'drm systemd-bootchart systemd' --kver %{kernel_version_build} |
 %if 0%{?builds_vmlinuz}
 /boot/vmlinuz-%{kernel_version_build}
 #/boot/vmlinuz-%{kernel_version}
-/boot/vmlinuz
+#/boot/vmlinuz
 %endif
 %if 0%{?builds_uImage}
 /boot/uImage
