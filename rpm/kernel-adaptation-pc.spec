@@ -27,6 +27,7 @@ Requires(pre): dracut >= 027
 BuildRequires:  pkgconfig(ncurses)
 BuildRequires:  bc
 BuildRequires:  mer-kernel-checks
+BuildRequires:  lz4
 Provides:   kernel = %{kernel_version}
 
 %description

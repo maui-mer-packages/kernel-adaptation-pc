@@ -17,6 +17,7 @@ RequiresPre:
 PkgBR:
     - bc
     - mer-kernel-checks
+    - lz4
 PkgConfigBR:
     - ncurses
 Provides:
