@@ -1,6 +1,6 @@
 Name: kernel-adaptation-pc
 Summary: Kernel Adaptation %{kernel_target_hw}
-Version: 3.14
+Version: 3.14.0
 Release: 1
 URL: http://www.kernel.org
 Group: Kernel/Linux Kernel
