@@ -23,7 +23,7 @@ Source1:    %{name}-x86.config
 Source2:    %{name}-x86_64.config
 Source100:  kernel-adaptation-pc.yaml
 Requires(pre): kmod
-Requires(pre): dracut >= 027
+Requires(pre): mkinitrd >= 6.0.39-1
 BuildRequires:  pkgconfig(ncurses)
 BuildRequires:  bc
 BuildRequires:  mer-kernel-checks
@@ -205,7 +205,8 @@ rm -f %{buildroot}/boot/vmlinuz
 %post
 # >> post
 depmod -a %{kernel_version_build}
-dracut -q -f -N -a 'drm systemd-bootchart systemd' /boot/initrd-%{kernel_version_build}.img %{kernel_version_build} || exit $?
+/sbin/new-kernel-pkg --package kernel-adaptation-pc --mkinitrd --depmod --install %{kernel_version_build} || exit $?
+#dracut -q -f -N -a 'drm systemd-bootchart systemd' /boot/initrd-%{kernel_version_build}.img %{kernel_version_build} || exit $?
 # << post
 
 %files

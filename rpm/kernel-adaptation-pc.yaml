@@ -13,7 +13,8 @@ Description: Kernel for %{kernel_target_hw}.
 
 RequiresPre:
     - kmod
-    - dracut >= 027
+    - mkinitrd >= 6.0.39-1
+#    - dracut >= 027
 PkgBR:
     - bc
     - mer-kernel-checks
