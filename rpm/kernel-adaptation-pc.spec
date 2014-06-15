@@ -205,7 +205,7 @@ rm -f %{buildroot}/boot/vmlinuz
 %post
 # >> post
 depmod -a %{kernel_version_build}
-dracut -q -f -N -a 'drm systemd-bootchart systemd' /boot/initrd-%{kernel_version_build}.img %{kernel_version_build} || exit $?
+dracut -q -f -N -a 'drm systemd-bootchart systemd' --kver %{kernel_version_build} || exit $?
 # << post
 
 %files
