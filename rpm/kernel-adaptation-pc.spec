@@ -6,14 +6,14 @@
 Name:       kernel-adaptation-pc
 
 # >> macros
-%define extraver maui1
-%define kernel_version 3.15.2
+%define extraver maui
+%define kernel_version 3.15.5
 %define kernel_version_build %{kernel_version}-%{extraver}
 %define kernel_devel_dir %{_prefix}/src/kernels/%{kernel_version_build}
 # << macros
 
 Summary:    Kernel Adaptation %{kernel_target_hw}
-Version:    3.15.2
+Version:    3.15.5
 Release:    1
 Group:      Kernel/Linux Kernel
 License:    GPLv2

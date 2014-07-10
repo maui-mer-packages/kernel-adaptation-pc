@@ -1,6 +1,6 @@
 Name: kernel-adaptation-pc
 Summary: Kernel Adaptation %{kernel_target_hw}
-Version: 3.15.2
+Version: 3.15.5
 Release: 1
 URL: http://www.kernel.org
 Group: Kernel/Linux Kernel
