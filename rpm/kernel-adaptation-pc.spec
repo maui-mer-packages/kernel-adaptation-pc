@@ -13,7 +13,7 @@ Name:       kernel-adaptation-pc
 # << macros
 
 Summary:    Kernel Adaptation %{kernel_target_hw}
-Version:    3.16.1
+Version:    %{kernel_version}
 Release:    1
 Group:      Kernel/Linux Kernel
 License:    GPLv2
